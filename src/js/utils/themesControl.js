@@ -5,7 +5,7 @@ import CSS from '../data/css';
 const { THEME_LIGTH, THEME_DARK } = CSS;
 
 const setStartTheme = () => {
-  const preferedThemeClass = localStorage.getItem(THEME_KEY) ?? THEME_LIGTH;
+  const preferedThemeClass = localStorage.getItem(THEME_KEY) || THEME_LIGTH;
   document.body.classList.add(preferedThemeClass);
   refs.themeCheckbox.checked = !document.body.classList.contains(THEME_LIGTH);
 };

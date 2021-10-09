@@ -20,7 +20,7 @@ const onCheckbox = e => {
 
   document.body.classList.replace(oldClass, newClass);
 
-  localStorage.setItem(THEME_KEY, setLigth ? THEME_LIGTH : THEME_DARK);
+  localStorage.setItem(THEME_KEY, newClass);
 };
 
 export { setStartTheme, onCheckbox };
